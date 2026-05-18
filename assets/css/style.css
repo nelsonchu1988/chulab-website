@@ -131,6 +131,59 @@ section { padding: 5rem 0; }
 }
 .nav-links a:hover { color: var(--cyan); }
 
+/* ===== LANG SWITCHER ===== */
+.lang-switcher { position: relative; margin-left: 1rem; }
+.lang-btn {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.85);
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 0.4rem 0.75rem;
+  border-radius: 16px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.lang-btn:hover { background: rgba(0,180,216,0.18); border-color: rgba(0,180,216,0.4); color: var(--white); }
+.lang-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  background: #0d1b2a;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  list-style: none;
+  margin: 0; padding: 0.4rem 0;
+  min-width: 160px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.4);
+  display: none;
+  z-index: 1100;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+.lang-menu.open { display: block; }
+.lang-menu li {
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.8);
+  cursor: pointer;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+.lang-menu li:hover { background: rgba(0,180,216,0.15); color: var(--cyan); }
+.lang-menu li.active { background: rgba(0,180,216,0.25); color: var(--cyan); font-weight: 600; }
+
+/* CJK / RTL font handling */
+html[lang^="zh"] { font-family: 'Noto Sans SC', 'Noto Sans TC', 'Inter', sans-serif; }
+html[lang="zh-TW"] { font-family: 'Noto Sans TC', 'Noto Sans SC', 'Inter', sans-serif; }
+html[lang="ja"] { font-family: 'Noto Sans JP', 'Inter', sans-serif; }
+html[lang="ko"] { font-family: 'Noto Sans KR', 'Inter', sans-serif; }
+html[lang="ar"] { font-family: 'Noto Sans Arabic', 'Inter', sans-serif; }
+html[dir="rtl"] .hero-eyebrow::before { display: none; }
+html[dir="rtl"] .hero-eyebrow { text-align: right; }
+
 /* ===== HERO ===== */
 #hero {
   min-height: 100vh;
