@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chu Lab — Spatial Biology and 3D Imaging of Bone. Department of Rheumatology and Inflammation Research, University of Gothenburg.">
+  <title>Chu Lab — Spatial Biology of Bone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">Chu<span>Lab</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#technologies">Technologies</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-content">
+    <div class="hero-eyebrow">Spatial Biology · 3D Imaging · Computational Genomics</div>
+    <h1>Mapping <em>Bone Biology</em><br>at Single-Cell Resolution</h1>
+    <p>We develop and apply spatial multi-omics and 3D imaging technologies to decode the cellular architecture of the skeleton — from growth to ageing to disease.</p>
+    <div class="hero-buttons">
+      <a href="#research" class="btn-primary">Explore Our Research</a>
+      <a href="#publications" class="btn-secondary">Publications</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="num">8<span>+</span></div>
+        <div class="lbl">Publications</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">84<span>+</span></div>
+        <div class="lbl">Citations</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">4</div>
+        <div class="lbl">h-index</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">2</div>
+        <div class="lbl">2026 Papers in Nature/Science journals</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-photo">
+        <!-- Save your headshot as assets/images/nelson-chu.jpg -->
+        <img src="assets/images/nelson-chu.jpg" alt="Nelson Chu" onerror="this.parentElement.innerHTML='<div class=\'about-photo-placeholder\'>Add your photo to<br>assets/images/nelson-chu.jpg</div>'">
+      </div>
+      <div class="about-text">
+        <div class="section-label">Principal Investigator</div>
+        <h2>Nelson Chu, PhD</h2>
+        <p class="about-affil">
+          Researcher · Dept of Rheumatology and Inflammation Research<br>
+          Institute of Medicine · University of Gothenburg, Sweden<br>
+          Previously: Karolinska Institutet (postdoc, 2021–2023)
+        </p>
+        <p>
+          My research sits at the intersection of skeletal biology and emerging technology. I use spatial transcriptomics, single-cell proteomics, and 3D computational imaging to map the molecular and cellular architecture of bone — how it develops under hormonal control, how stem cell niches are organised, and how that architecture fails in disease.
+        </p>
+        <p>
+          Recent work in <em>Science Translational Medicine</em> (2026) built the first transcriptional atlas of the pubertal human growth plate, uncovering two stem cell populations and direct GH action. In parallel, work in <em>Nature Biomedical Engineering</em> (2026) applied 3D tissue clearing to quantitatively compare the osteovascular niche in aged versus young human bone.
+        </p>
+        <p>
+          I am also developing open-source computational tools — including interactive 3D web viewers and network-level single-cell analysis pipelines — to make high-dimensional bone biology data accessible and interpretable.
+        </p>
+        <div class="about-links">
+          <a href="https://scholar.google.com/citations?user=eZervHIAAAAJ" target="_blank">Google Scholar</a>
+          <a href="https://orcid.org/0000-0002-2696-5850" target="_blank">ORCID</a>
+          <a href="https://www.linkedin.com/in/nelson-tsz-long-chu-223854193" target="_blank">LinkedIn</a>
+          <a href="mailto:tsz.long.chu@gu.se">Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RESEARCH ===== -->
+<section id="research" class="bg-light">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">What We Do</div>
+      <h2>Research Directions</h2>
+      <p>We are a spatial and computational biology lab focused on the skeleton. Our work spans technique development, mechanistic biology, and translational disease applications.</p>
+    </div>
+    <div class="research-grid">
+      <div class="research-card">
+        <div class="research-icon">🗺️</div>
+        <h3>Spatial Multi-Omics of Bone</h3>
+        <p>We apply MERFISH and spatial transcriptomics to map gene expression in intact skeletal tissue, revealing the cell-type niches, signalling gradients, and hormonal response programmes that govern bone homeostasis and growth.</p>
+      </div>
+      <div class="research-card">
+        <div class="research-icon">🔭</div>
+        <h3>3D Imaging & Tissue Architecture</h3>
+        <p>Using lightsheet microscopy and microCT combined with tissue-clearing protocols, we reconstruct bone vasculature, stem cell niches, and cellular organisation from subcellular to whole-organ scale — and build interactive web-based 3D viewers to share them.</p>
+      </div>
+      <div class="research-card">
+        <div class="research-icon">💻</div>
+        <h3>Computational Biology</h3>
+        <p>We develop and apply single-cell network analysis tools (hdWGCNA, DeepCell surfactome pipeline), cell-cell communication inference (CellChat, SCENIC), and machine-learning-based segmentation to make sense of multi-modal skeletal datasets.</p>
+      </div>
+      <div class="research-card">
+        <div class="research-icon">🦴</div>
+        <h3>Skeletal Development & Disease</h3>
+        <p>From the growth hormone axis in puberty to osteovascular ageing and osteoporosis, we investigate the druggable molecular mechanisms that determine how bone grows, how it is maintained, and how it breaks down — with an eye toward therapeutic applications.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PUBLICATIONS ===== -->
+<section id="publications">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Selected Work</div>
+      <h2>Publications</h2>
+      <a href="https://scholar.google.com/citations?user=eZervHIAAAAJ" class="scholar-link" target="_blank">Full list on Google Scholar →</a>
+    </div>
+
+    <div class="pub-list">
+
+      <!-- STM 2026 -->
+      <div class="pub-item">
+        <div class="pub-badge journal-stm">Sci Transl Med</div>
+        <div class="pub-content">
+          <div class="pub-year">2026</div>
+          <p class="pub-title">A transcriptional atlas of the pubertal human growth plate reveals two populations of stem cells and direct effect of growth hormone</p>
+          <p class="pub-authors"><strong>Chu NTL</strong>, Dregval O, Zaman F, Li L, Tian X, et al.</p>
+          <a href="https://doi.org/10.1126/scitranslmed.adw3590" class="pub-doi" target="_blank">doi:10.1126/scitranslmed.adw3590</a>
+        </div>
+      </div>
+
+      <!-- NBE 2026 -->
+      <div class="pub-item">
+        <div class="pub-badge journal-nbe">Nat Biomed Eng</div>
+        <div class="pub-content">
+          <div class="pub-year">2026</div>
+          <p class="pub-title">Three-dimensional quantitative tissue clearing reveals differences in osteovascular niche of aged and young human mesenchymal stromal cells</p>
+          <p class="pub-authors"><strong>Chu NTL</strong>, Dregval O, Chang Y-W, et al.</p>
+          <a href="https://doi.org/10.1038/s41551-026-01645-3" class="pub-doi" target="_blank">doi:10.1038/s41551-026-01645-3</a>
+        </div>
+      </div>
+
+      <!-- PNAS 2025 -->
+      <div class="pub-item">
+        <div class="pub-badge journal-pnas">PNAS</div>
+        <div class="pub-content">
+          <div class="pub-year">2025</div>
+          <p class="pub-title">Growth hormone regulates the stem cell population in the growth plate</p>
+          <p class="pub-authors"><strong>Chu NTL</strong>*, Zhou B*, Heinonen JO, Dregval O, Liu X, et al. <em>(co-first author)</em></p>
+          <a href="https://doi.org/10.1073/pnas.2512316122" class="pub-doi" target="_blank">doi:10.1073/pnas.2512316122</a>
+        </div>
+      </div>
+
+      <!-- eLife 2023 -->
+      <div class="pub-item">
+        <div class="pub-badge journal-elife">eLife</div>
+        <div class="pub-content">
+          <div class="pub-year">2023</div>
+          <p class="pub-title">MMP14 cleaves PTH1R in the chondrocyte-derived osteoblast lineage, curbing signalling intensity for proper bone anabolism</p>
+          <p class="pub-authors"><strong>Chu NTL</strong>, …, Cheah KSE. <em>(first author)</em></p>
+          <a href="https://doi.org/10.7554/eLife.82142" class="pub-doi" target="_blank">doi:10.7554/eLife.82142</a>
+        </div>
+      </div>
+
+      <!-- Co-authored -->
+      <div class="pub-item">
+        <div class="pub-badge journal-other">Co-authored</div>
+        <div class="pub-content">
+          <div class="pub-year">2024–2026</div>
+          <p class="pub-title">Selected co-authored publications</p>
+          <p class="pub-authors">
+            <em>Nat Commun</em> 2026 · <em>JCI Insight</em> 2024 · <em>Nat Cell Biol</em> 2024 · <em>Curr Osteoporos Rep</em> 2023
+          </p>
+          <a href="https://scholar.google.com/citations?user=eZervHIAAAAJ" class="pub-doi" target="_blank">View on Google Scholar →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== TECHNOLOGIES ===== -->
+<section id="technologies" class="bg-dark">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Our Toolkit</div>
+      <h2>Technologies</h2>
+      <p style="color:rgba(255,255,255,0.55);">We combine wet-lab imaging with computational analysis to produce fully integrated, multi-modal datasets of the skeleton.</p>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-item">
+        <span class="tech-name">Spatial Transcriptomics</span>
+        <span class="tech-detail">MERFISH · Vizgen MERSCOPE · 10x Visium</span>
+      </div>
+      <div class="tech-item">
+        <span class="tech-name">3D Imaging</span>
+        <span class="tech-detail">Lightsheet Microscopy · MicroCT · Tissue Clearing (iDISCO+)</span>
+      </div>
+      <div class="tech-item">
+        <span class="tech-name">Single-Cell Genomics</span>
+        <span class="tech-detail">scRNA-seq · snRNA-seq · Multiome</span>
+      </div>
+      <div class="tech-item">
+        <span class="tech-name">Network & Cell Communication</span>
+        <span class="tech-detail">hdWGCNA · CellChat · SCENIC · NicheNet</span>
+      </div>
+      <div class="tech-item">
+        <span class="tech-name">Proteomics Integration</span>
+        <span class="tech-detail">Surfactome Pipeline · DeepCell · Mass Spec Annotation</span>
+      </div>
+      <div class="tech-item">
+        <span class="tech-name">Interactive 3D Visualisation</span>
+        <span class="tech-detail">Three.js · WebGL · Custom Web Viewers</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEAM ===== -->
+<section id="team">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">People</div>
+      <h2>The Team</h2>
+    </div>
+    <div class="team-grid">
+
+      <div class="team-card">
+        <div class="team-photo">
+          <img src="assets/images/nelson-chu.jpg" alt="Nelson Chu" onerror="this.style.display='none'">
+        </div>
+        <h3>Nelson Chu, PhD</h3>
+        <p class="team-role">Principal Investigator</p>
+        <p class="team-affil">University of Gothenburg</p>
+      </div>
+
+      <div class="team-card ai-card">
+        <div class="team-photo ai-photo">🐖</div>
+        <h3>猪猪</h3>
+        <p class="team-role">AI Research Assistant</p>
+        <p class="team-affil">Claude Sonnet · In silico</p>
+      </div>
+
+      <div class="team-card ai-card">
+        <div class="team-photo ai-photo">🎭</div>
+        <h3>Opus</h3>
+        <p class="team-role">AI Research Assistant</p>
+        <p class="team-affil">Claude Opus · In silico</p>
+      </div>
+
+    </div>
+
+    <div class="join-us">
+      <div>
+        <h3>Join Us</h3>
+        <p>We are building a team. If you are excited about spatial biology, 3D imaging, or computational approaches to skeletal research, we want to hear from you — postdocs, PhD students, and rotation students welcome.</p>
+      </div>
+      <a href="#contact" class="btn-primary">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VIDEOS ===== -->
+<section id="videos" class="bg-light">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Research in Motion</div>
+      <h2>Videos</h2>
+    </div>
+    <div class="video-grid">
+
+      <div class="video-item">
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/vQO9o9_5HQA"
+            title="3D Bone Imaging"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <p class="video-caption">
+          <strong>3D Osteovascular Niche</strong><br>
+          Lightsheet microscopy of human bone — visualising age-related changes in the osteovascular niche. <em>Nature Biomedical Engineering</em>, 2026.
+        </p>
+      </div>
+
+      <!-- Add more videos here — duplicate the .video-item block above -->
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Get In Touch</div>
+      <h2>Contact</h2>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <div class="contact-item">
+          <strong>Email</strong>
+          <a href="mailto:tsz.long.chu@gu.se">tsz.long.chu@gu.se</a>
+        </div>
+        <div class="contact-item">
+          <strong>Address</strong>
+          <p>
+            Department of Rheumatology and Inflammation Research<br>
+            Institute of Medicine<br>
+            University of Gothenburg<br>
+            Gothenburg, Sweden
+          </p>
+        </div>
+        <div class="contact-item">
+          <strong>Google Scholar</strong>
+          <a href="https://scholar.google.com/citations?user=eZervHIAAAAJ" target="_blank">scholar.google.com → Nelson Tsz Long Chu</a>
+        </div>
+      </div>
+      <div class="contact-note">
+        <h3>Prospective Students & Postdocs</h3>
+        <p>
+          We are looking for motivated researchers interested in spatial genomics, computational biology, or advanced imaging applied to skeletal biology.
+          Please send a brief introduction, your CV, and what specifically interests you in our work.
+          Strong candidates will be considered for PhD, postdoc, and visiting researcher positions.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <p>© 2026 Chu Lab · University of Gothenburg · <a href="https://scholar.google.com/citations?user=eZervHIAAAAJ" target="_blank">Google Scholar</a></p>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+</script>
+
+</body>
+</html>
