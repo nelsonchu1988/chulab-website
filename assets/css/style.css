@@ -439,8 +439,8 @@ section { padding: 5rem 0; }
   font-size: 2.2rem;
   border-color: var(--cyan) !important;
 }
-.claude-photo { background: linear-gradient(135deg, #2d1b14, #3d2118) !important; }
-.claude-svg { width: 56px; height: 56px; }
+.claude-photo { background: linear-gradient(135deg, #1a1a2e, #2d2d4d) !important; }
+.claude-svg { width: 64px; height: 64px; image-rendering: pixelated; }
 .team-card.ai-card { border: 1px dashed var(--cyan); background: #f5fbfe; }
 .team-card h3 { font-size: 1rem; margin-bottom: 0.2rem; }
 .team-role { font-size: 0.82rem; color: var(--blue); font-weight: 500; margin-bottom: 0.2rem; }
