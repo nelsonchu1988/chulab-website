@@ -16,7 +16,7 @@ const LANGS = {
 
 const T = {
 'en': {
-  'nav.about': 'About', 'nav.research': 'Research', 'nav.publications': 'Publications', 'nav.funding': 'Funding',
+  'nav.about': 'About', 'nav.research': 'Research', 'nav.publications': 'Publications', 'nav.funding': 'Funding', 'nav.news': 'News',
   'nav.technologies': 'Technologies', 'nav.team': 'Team', 'nav.videos': 'Videos', 'nav.contact': 'Contact',
   'hero.eyebrow': 'Spatial Biology · 3D Imaging · Computational Genomics',
   'hero.h1': 'Mapping <em>Bone Biology</em><br>at Single-Cell Resolution',
@@ -55,6 +55,7 @@ const T = {
   'funding.role.pi': 'Principal Investigator', 'funding.role.copi': 'Co-PI', 'funding.role.coapp': 'Co-applicant',
   'funding.lundgrens.title': 'Lundgrens Foundation',
   'funding.lundgrens.desc': 'Awarded research grant supporting work on skeletal biology and 3D imaging of bone.',
+  'news.label': 'Press Coverage', 'news.h2': 'News Coverage',
   'tech.label': 'Our Toolkit', 'tech.h2': 'Technologies',
   'tech.intro': 'We combine wet-lab imaging with computational analysis to produce fully integrated, multi-modal datasets of the skeleton.',
   'tech.t1.n': 'Spatial Transcriptomics', 'tech.t2.n': '3D Imaging', 'tech.t3.n': 'Single-Cell Genomics',
@@ -80,7 +81,7 @@ const T = {
   'footer.copy': '© 2026 Chu Lab'
 },
 'zh-CN': {
-  'nav.about': '简介', 'nav.research': '研究方向', 'nav.publications': '论文成果', 'nav.funding': '科研经费',
+  'nav.about': '简介', 'nav.research': '研究方向', 'nav.publications': '论文成果', 'nav.funding': '科研经费', 'nav.news': '新闻报道',
   'nav.technologies': '技术平台', 'nav.team': '团队', 'nav.videos': '影像', 'nav.contact': '联系',
   'hero.eyebrow': '空间生物学 · 三维成像 · 计算基因组学',
   'hero.h1': '在单细胞分辨率下绘制<br><em>骨骼生物学</em>图谱',
@@ -119,6 +120,7 @@ const T = {
   'funding.role.pi': '项目负责人', 'funding.role.copi': '共同负责人', 'funding.role.coapp': '共同申请人',
   'funding.lundgrens.title': 'Lundgrens 基金会',
   'funding.lundgrens.desc': '获颁研究基金,支持骨骼生物学与三维骨成像方向的研究工作。',
+  'news.label': '媒体报道', 'news.h2': '新闻报道',
   'tech.label': '研究工具箱', 'tech.h2': '技术平台',
   'tech.intro': '我们将湿实验成像与计算分析相结合,产出深度整合的多模态骨骼数据集。',
   'tech.t1.n': '空间转录组', 'tech.t2.n': '三维成像', 'tech.t3.n': '单细胞基因组',
@@ -144,7 +146,7 @@ const T = {
   'footer.copy': '© 2026 Chu Lab'
 },
 'zh-TW': {
-  'nav.about': '簡介', 'nav.research': '研究方向', 'nav.publications': '論文成果', 'nav.funding': '科研經費',
+  'nav.about': '簡介', 'nav.research': '研究方向', 'nav.publications': '論文成果', 'nav.funding': '科研經費', 'nav.news': '新聞報道',
   'nav.technologies': '技術平台', 'nav.team': '團隊', 'nav.videos': '影像', 'nav.contact': '聯絡',
   'hero.eyebrow': '空間生物學 · 三維成像 · 計算基因體學',
   'hero.h1': '以單細胞解析度繪製<br><em>骨骼生物學</em>圖譜',
@@ -183,6 +185,7 @@ const T = {
   'funding.role.pi': '計畫主持人', 'funding.role.copi': '共同主持人', 'funding.role.coapp': '共同申請人',
   'funding.lundgrens.title': 'Lundgrens 基金會',
   'funding.lundgrens.desc': '獲頒研究基金,支持骨骼生物學與三維骨成像方向的研究工作。',
+  'news.label': '媒體報道', 'news.h2': '新聞報道',
   'tech.label': '研究工具箱', 'tech.h2': '技術平台',
   'tech.intro': '我們將濕實驗成像與計算分析相結合,產出深度整合的多模態骨骼資料集。',
   'tech.t1.n': '空間轉錄組', 'tech.t2.n': '三維成像', 'tech.t3.n': '單細胞基因體',
@@ -208,7 +211,7 @@ const T = {
   'footer.copy': '© 2026 Chu Lab'
 },
 'ja': {
-  'nav.about': 'About', 'nav.research': '研究', 'nav.publications': '論文', 'nav.funding': '研究資金',
+  'nav.about': 'About', 'nav.research': '研究', 'nav.publications': '論文', 'nav.funding': '研究資金', 'nav.news': 'ニュース',
   'nav.technologies': '技術', 'nav.team': 'チーム', 'nav.videos': '動画', 'nav.contact': 'お問い合わせ',
   'hero.eyebrow': '空間生物学 · 3次元イメージング · 計算ゲノミクス',
   'hero.h1': '単一細胞解像度で<br><em>骨生物学</em>を描く',
@@ -247,6 +250,7 @@ const T = {
   'funding.role.pi': '研究代表者', 'funding.role.copi': '共同代表者', 'funding.role.coapp': '共同申請者',
   'funding.lundgrens.title': 'Lundgrens 財団',
   'funding.lundgrens.desc': '骨格生物学および骨の3Dイメージング研究を支援する研究助成金を獲得。',
+  'news.label': 'プレス', 'news.h2': 'ニュース報道',
   'tech.label': 'ツール', 'tech.h2': '技術',
   'tech.intro': 'ウェット実験イメージングと計算解析を組み合わせ、骨格の完全統合・多モーダルデータセットを生み出します。',
   'tech.t1.n': '空間トランスクリプトミクス', 'tech.t2.n': '3Dイメージング', 'tech.t3.n': '単一細胞ゲノミクス',
@@ -272,7 +276,7 @@ const T = {
   'footer.copy': '© 2026 Chu Lab'
 },
 'ko': {
-  'nav.about': '소개', 'nav.research': '연구', 'nav.publications': '논문', 'nav.funding': '연구비',
+  'nav.about': '소개', 'nav.research': '연구', 'nav.publications': '논문', 'nav.funding': '연구비', 'nav.news': '뉴스',
   'nav.technologies': '기술', 'nav.team': '팀', 'nav.videos': '영상', 'nav.contact': '연락',
   'hero.eyebrow': '공간 생물학 · 3D 이미징 · 계산 유전체학',
   'hero.h1': '단일세포 해상도로<br><em>골격 생물학</em>을 그리다',
@@ -311,6 +315,7 @@ const T = {
   'funding.role.pi': '책임 연구자', 'funding.role.copi': '공동 책임 연구자', 'funding.role.coapp': '공동 신청자',
   'funding.lundgrens.title': 'Lundgrens 재단',
   'funding.lundgrens.desc': '골격 생물학과 3D 골 영상화 연구를 지원하는 연구비 수여.',
+  'news.label': '언론 보도', 'news.h2': '뉴스 보도',
   'tech.label': '연구 도구', 'tech.h2': '기술',
   'tech.intro': '습식 실험 이미징과 계산 분석을 결합해 골격의 완전 통합 다중모드 데이터셋을 생산합니다.',
   'tech.t1.n': '공간 전사체학', 'tech.t2.n': '3D 이미징', 'tech.t3.n': '단일세포 유전체학',
@@ -336,7 +341,7 @@ const T = {
   'footer.copy': '© 2026 Chu Lab'
 },
 'sv': {
-  'nav.about': 'Om', 'nav.research': 'Forskning', 'nav.publications': 'Publikationer', 'nav.funding': 'Finansiering',
+  'nav.about': 'Om', 'nav.research': 'Forskning', 'nav.publications': 'Publikationer', 'nav.funding': 'Finansiering', 'nav.news': 'Nyheter',
   'nav.technologies': 'Teknik', 'nav.team': 'Team', 'nav.videos': 'Filmer', 'nav.contact': 'Kontakt',
   'hero.eyebrow': 'Spatial biologi · 3D-avbildning · Beräkningsgenomik',
   'hero.h1': 'Kartläggning av<br><em>skelettbiologi</em> i encells-upplösning',
@@ -375,6 +380,7 @@ const T = {
   'funding.role.pi': 'Huvudsökande', 'funding.role.copi': 'Medsökande PI', 'funding.role.coapp': 'Medsökande',
   'funding.lundgrens.title': 'Lundgrenska stiftelserna',
   'funding.lundgrens.desc': 'Beviljat forskningsanslag för arbete inom skelettbiologi och 3D-avbildning av ben.',
+  'news.label': 'Pressbevakning', 'news.h2': 'Nyhetsbevakning',
   'tech.label': 'Vår verktygslåda', 'tech.h2': 'Teknik',
   'tech.intro': 'Vi kombinerar våtlabbsavbildning med beräkningsanalys för att skapa helt integrerade, multimodala skelettdatamängder.',
   'tech.t1.n': 'Spatial transkriptomik', 'tech.t2.n': '3D-avbildning', 'tech.t3.n': 'Encells-genomik',
@@ -400,7 +406,7 @@ const T = {
   'footer.copy': '© 2026 Chu Lab'
 },
 'es': {
-  'nav.about': 'Acerca', 'nav.research': 'Investigación', 'nav.publications': 'Publicaciones', 'nav.funding': 'Financiación',
+  'nav.about': 'Acerca', 'nav.research': 'Investigación', 'nav.publications': 'Publicaciones', 'nav.funding': 'Financiación', 'nav.news': 'Noticias',
   'nav.technologies': 'Tecnologías', 'nav.team': 'Equipo', 'nav.videos': 'Vídeos', 'nav.contact': 'Contacto',
   'hero.eyebrow': 'Biología espacial · Imagen 3D · Genómica computacional',
   'hero.h1': 'Cartografiando la <em>biología ósea</em><br>con resolución de célula única',
@@ -439,6 +445,7 @@ const T = {
   'funding.role.pi': 'Investigador Principal', 'funding.role.copi': 'Co-IP', 'funding.role.coapp': 'Co-solicitante',
   'funding.lundgrens.title': 'Fundación Lundgrens',
   'funding.lundgrens.desc': 'Subvención de investigación concedida para el trabajo en biología esquelética e imagen 3D del hueso.',
+  'news.label': 'Cobertura de prensa', 'news.h2': 'Noticias',
   'tech.label': 'Nuestras herramientas', 'tech.h2': 'Tecnologías',
   'tech.intro': 'Combinamos imagen experimental con análisis computacional para producir conjuntos de datos esqueléticos multimodales totalmente integrados.',
   'tech.t1.n': 'Transcriptómica espacial', 'tech.t2.n': 'Imagen 3D', 'tech.t3.n': 'Genómica unicelular',
@@ -464,7 +471,7 @@ const T = {
   'footer.copy': '© 2026 Chu Lab'
 },
 'fr': {
-  'nav.about': 'À propos', 'nav.research': 'Recherche', 'nav.publications': 'Publications', 'nav.funding': 'Financement',
+  'nav.about': 'À propos', 'nav.research': 'Recherche', 'nav.publications': 'Publications', 'nav.funding': 'Financement', 'nav.news': 'Actualités',
   'nav.technologies': 'Technologies', 'nav.team': 'Équipe', 'nav.videos': 'Vidéos', 'nav.contact': 'Contact',
   'hero.eyebrow': 'Biologie spatiale · Imagerie 3D · Génomique computationnelle',
   'hero.h1': 'Cartographier la <em>biologie osseuse</em><br>à résolution unicellulaire',
@@ -503,6 +510,7 @@ const T = {
   'funding.role.pi': 'Investigateur Principal', 'funding.role.copi': 'Co-IP', 'funding.role.coapp': 'Co-demandeur',
   'funding.lundgrens.title': 'Fondation Lundgrens',
   'funding.lundgrens.desc': "Subvention de recherche obtenue pour les travaux en biologie squelettique et imagerie 3D de l'os.",
+  'news.label': 'Couverture presse', 'news.h2': 'Actualités scientifiques',
   'tech.label': 'Notre boîte à outils', 'tech.h2': 'Technologies',
   'tech.intro': 'Nous combinons imagerie expérimentale et analyse computationnelle pour produire des jeux de données squelettiques multimodaux entièrement intégrés.',
   'tech.t1.n': 'Transcriptomique spatiale', 'tech.t2.n': 'Imagerie 3D', 'tech.t3.n': 'Génomique unicellulaire',
@@ -528,7 +536,7 @@ const T = {
   'footer.copy': '© 2026 Chu Lab'
 },
 'de': {
-  'nav.about': 'Über', 'nav.research': 'Forschung', 'nav.publications': 'Publikationen', 'nav.funding': 'Förderung',
+  'nav.about': 'Über', 'nav.research': 'Forschung', 'nav.publications': 'Publikationen', 'nav.funding': 'Förderung', 'nav.news': 'Nachrichten',
   'nav.technologies': 'Technologien', 'nav.team': 'Team', 'nav.videos': 'Videos', 'nav.contact': 'Kontakt',
   'hero.eyebrow': 'Räumliche Biologie · 3D-Bildgebung · Computergestützte Genomik',
   'hero.h1': 'Kartierung der <em>Knochenbiologie</em><br>in Einzelzellauflösung',
@@ -567,6 +575,7 @@ const T = {
   'funding.role.pi': 'Hauptantragsteller', 'funding.role.copi': 'Co-PI', 'funding.role.coapp': 'Mitantragsteller',
   'funding.lundgrens.title': 'Lundgrens-Stiftung',
   'funding.lundgrens.desc': 'Bewilligte Forschungsförderung für Arbeiten zur Skelettbiologie und 3D-Bildgebung des Knochens.',
+  'news.label': 'Presseberichte', 'news.h2': 'Presseberichte',
   'tech.label': 'Unser Werkzeugkasten', 'tech.h2': 'Technologien',
   'tech.intro': 'Wir verbinden Nasslaborbildgebung mit Rechenanalysen, um vollständig integrierte, multimodale Skelettdatensätze zu erzeugen.',
   'tech.t1.n': 'Räumliche Transkriptomik', 'tech.t2.n': '3D-Bildgebung', 'tech.t3.n': 'Einzelzell-Genomik',
@@ -592,7 +601,7 @@ const T = {
   'footer.copy': '© 2026 Chu Lab'
 },
 'ar': {
-  'nav.about': 'حول', 'nav.research': 'البحث', 'nav.publications': 'المنشورات', 'nav.funding': 'التمويل',
+  'nav.about': 'حول', 'nav.research': 'البحث', 'nav.publications': 'المنشورات', 'nav.funding': 'التمويل', 'nav.news': 'أخبار',
   'nav.technologies': 'التقنيات', 'nav.team': 'الفريق', 'nav.videos': 'الفيديوهات', 'nav.contact': 'تواصل',
   'hero.eyebrow': 'البيولوجيا المكانية · التصوير ثلاثي الأبعاد · الجينوميات الحسابية',
   'hero.h1': 'رسم خرائط <em>بيولوجيا العظام</em><br>بدقة الخلية الواحدة',
@@ -631,6 +640,7 @@ const T = {
   'funding.role.pi': 'الباحث الرئيسي', 'funding.role.copi': 'المشارك الرئيسي', 'funding.role.coapp': 'مقدم طلب مشارك',
   'funding.lundgrens.title': 'مؤسسة Lundgrens',
   'funding.lundgrens.desc': 'منحة بحث ممنوحة لدعم العمل في بيولوجيا الهيكل العظمي والتصوير ثلاثي الأبعاد للعظم.',
+  'news.label': 'تغطية إعلامية', 'news.h2': 'تغطية إعلامية',
   'tech.label': 'صندوق أدواتنا', 'tech.h2': 'التقنيات',
   'tech.intro': 'نجمع بين التصوير المعملي والتحليل الحسابي لإنتاج مجموعات بيانات هيكلية متكاملة ومتعددة الأنماط.',
   'tech.t1.n': 'النسخ المكاني', 'tech.t2.n': 'التصوير ثلاثي الأبعاد', 'tech.t3.n': 'جينوميات الخلية الواحدة',

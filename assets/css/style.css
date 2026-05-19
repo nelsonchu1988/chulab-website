@@ -446,6 +446,53 @@ html[dir="rtl"] .hero-eyebrow { text-align: right; }
 .journal-jci    { background: #fff8e1; color: #7a5200; }
 .journal-review { background: #f5f5f5; color: #546e7a; }
 
+/* ===== NEWS ===== */
+.news-list { display: flex; flex-direction: column; gap: 0.75rem; }
+.news-item {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  background: var(--white);
+  border: 1px solid var(--light-gray);
+  border-radius: var(--radius);
+  padding: 0.9rem 1.4rem;
+  transition: box-shadow 0.2s;
+}
+.news-item:hover { box-shadow: var(--shadow); }
+.news-source {
+  flex-shrink: 0;
+  width: 8rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-light);
+}
+.news-headline {
+  flex: 1;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  line-height: 1.45;
+  transition: color 0.2s;
+}
+.news-headline:hover { color: var(--cyan); }
+.news-paper-tag {
+  flex-shrink: 0;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+@media (max-width: 640px) {
+  .news-item { flex-wrap: wrap; }
+  .news-source { width: 100%; }
+  .news-paper-tag { margin-top: 0.3rem; }
+}
+
 /* ===== FUNDING ===== */
 .funding-list { display: flex; flex-direction: column; gap: 1.2rem; }
 .funding-item {
