@@ -431,6 +431,20 @@ html[dir="rtl"] .hero-eyebrow { text-align: right; }
   transition: color 0.2s;
 }
 .pub-doi:hover { color: var(--cyan); text-decoration: underline; }
+.pub-category { margin-bottom: 2.8rem; }
+.pub-category-heading {
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 1.4rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--cyan);
+}
+.pub-selected-heading { font-size: 1.65rem; }
+.pub-coauth-heading   { font-size: 1.15rem; color: var(--text-mid); }
+.journal-ncomm  { background: #e0f7fa; color: #006064; }
+.journal-ncb    { background: #ede7f6; color: #4527a0; }
+.journal-jci    { background: #fff8e1; color: #7a5200; }
+.journal-review { background: #f5f5f5; color: #546e7a; }
 
 /* ===== FUNDING ===== */
 .funding-list { display: flex; flex-direction: column; gap: 1.2rem; }
