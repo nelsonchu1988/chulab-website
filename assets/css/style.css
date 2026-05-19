@@ -432,6 +432,57 @@ html[dir="rtl"] .hero-eyebrow { text-align: right; }
 }
 .pub-doi:hover { color: var(--cyan); text-decoration: underline; }
 
+/* ===== FUNDING ===== */
+.funding-list { display: flex; flex-direction: column; gap: 1.2rem; }
+.funding-item {
+  display: flex;
+  gap: 1.6rem;
+  background: var(--white);
+  border: 1px solid var(--light-gray);
+  border-left: 3px solid var(--cyan);
+  border-radius: var(--radius);
+  padding: 1.4rem 1.6rem;
+  align-items: flex-start;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.funding-item:hover { box-shadow: var(--shadow-lg); transform: translateY(-1px); }
+.funding-year {
+  flex-shrink: 0;
+  font-family: var(--font-head);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--blue);
+  min-width: 60px;
+  padding-top: 0.1rem;
+}
+.funding-title { font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--navy); }
+.funding-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: center;
+  font-size: 0.82rem;
+  margin-bottom: 0.6rem;
+}
+.funding-role {
+  background: rgba(0,180,216,0.12);
+  color: var(--blue);
+  font-weight: 600;
+  padding: 0.2rem 0.7rem;
+  border-radius: 4px;
+}
+.funding-amount {
+  font-family: var(--font-head);
+  font-weight: 700;
+  color: var(--gold);
+  font-size: 0.95rem;
+}
+.funding-desc { font-size: 0.88rem; color: var(--text-mid); line-height: 1.6; }
+@media (max-width: 600px) {
+  .funding-item { flex-direction: column; gap: 0.5rem; }
+  .funding-year { min-width: auto; }
+}
+
 /* ===== TECHNOLOGIES ===== */
 .tech-grid {
   display: grid;
