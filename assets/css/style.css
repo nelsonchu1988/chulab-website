@@ -188,7 +188,7 @@ html[dir="rtl"] .hero-eyebrow { text-align: right; }
 #hero {
   min-height: 100vh;
   background:
-    linear-gradient(135deg, rgba(13,27,42,0.90) 0%, rgba(27,45,66,0.82) 45%, rgba(10,37,64,0.78) 100%),
+    linear-gradient(135deg, rgba(13,27,42,0.68) 0%, rgba(27,45,66,0.58) 45%, rgba(10,37,64,0.52) 100%),
     url('../figures/nbe-fig3e-aged-bone-biopsy.png') center / cover no-repeat;
   display: flex;
   align-items: center;
