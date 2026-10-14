@@ -3,11 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Chu Lab — Spatial Biology and 3D Imaging of Bone. An independent research vision by Nelson Tsz Long Chu.">
-  <title>Chu Lab — Spatial Biology of Bone</title>
+  <meta name="description" content="Chu Lab — Skeletal Growth & 3D Molecular Imaging. Nelson Tsz Long Chu, University of Gothenburg: endocrinology, developmental biology and 3D molecular imaging of intact human bone.">
+  <title>Chu Lab — Skeletal Growth &amp; 3D Molecular Imaging</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <meta name="theme-color" content="#F7F4EE">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Chu Lab — Skeletal Growth & 3D Molecular Imaging">
+  <meta property="og:description" content="Seeing the skeleton, cell by cell: endocrinology, developmental biology and 3D molecular imaging of intact human bone.">
+  <meta property="og:url" content="https://nelsonchu1988.github.io/chulab-website/">
+  <meta property="og:image" content="https://nelsonchu1988.github.io/chulab-website/assets/figures/nbe-fig3e-aged-bone-biopsy-clean.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script>document.documentElement.classList.add('js');</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..800&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&family=Noto+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -15,386 +24,343 @@
 <!-- ===== NAVBAR ===== -->
 <nav id="navbar">
   <div class="nav-container">
-    <div class="nav-logo">Chu<span>Lab</span></div>
+    <a href="#hero" class="brand" aria-label="Chu Lab home">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <rect width="40" height="40" rx="3" fill="#0F5662"/>
+        <path d="M26.5 13.2a9.6 9.6 0 1 0 0 13.6" fill="none" stroke="#F7F4EE" stroke-width="3.4" stroke-linecap="round"/>
+        <circle cx="27.4" cy="20" r="2.7" fill="#D9A62B"/>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-name">CHU LAB</span>
+        <span class="brand-sub">Skeletal Growth &amp; 3D Molecular Imaging</span>
+      </span>
+    </a>
     <ul class="nav-links">
-      <li><a href="#about" data-i18n="nav.about">About</a></li>
       <li><a href="#research" data-i18n="nav.research">Research</a></li>
+      <li><a href="#about" data-i18n="nav.about">About</a></li>
       <li><a href="#publications" data-i18n="nav.publications">Publications</a></li>
-      <li><a href="#funding" data-i18n="nav.funding">Funding</a></li>
-      <li><a href="#news" data-i18n="nav.news">News</a></li>
       <li><a href="#technologies" data-i18n="nav.technologies">Technologies</a></li>
-      <li><a href="#team" data-i18n="nav.team">Team</a></li>
       <li><a href="#videos" data-i18n="nav.videos">Videos</a></li>
-      <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      <li><a href="#team" data-i18n="nav.team">Team</a></li>
+      <li><a href="#news" data-i18n="nav.news">News</a></li>
     </ul>
-    <div class="lang-switcher">
-      <button id="lang-btn" class="lang-btn" onclick="toggleLangMenu()">🌐 <span id="cur-lang">EN</span> ▾</button>
-      <ul id="lang-menu" class="lang-menu"></ul>
+    <div class="nav-right">
+      <a href="#contact" class="btn btn-outline nav-cta" data-i18n="nav.contact">Contact</a>
+      <div class="lang-switcher">
+        <button id="lang-btn" class="lang-btn" onclick="toggleLangMenu()">🌐 <span id="cur-lang">EN</span> ▾</button>
+        <ul id="lang-menu" class="lang-menu"></ul>
+      </div>
     </div>
   </div>
 </nav>
 
 <!-- ===== HERO ===== -->
-<section id="hero">
-  <div class="hero-content">
-    <div class="hero-left">
-      <div class="hero-eyebrow" data-i18n="hero.eyebrow">Spatial Biology · 3D Imaging · Computational Genomics</div>
-      <h1 data-i18n="hero.h1">Mapping <em>Bone Biology</em><br>at Single-Cell Resolution</h1>
-      <p data-i18n="hero.desc">We develop and apply spatial multi-omics and 3D imaging technologies to decode the cellular architecture of the skeleton — from growth to ageing to disease.</p>
-      <div class="hero-buttons">
-        <a href="#research" class="btn-primary" data-i18n="hero.btn1">Explore Our Research</a>
-        <a href="#publications" class="btn-secondary" data-i18n="hero.btn2">Publications</a>
-      </div>
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <div class="num">8<span>+</span></div>
-          <div class="lbl" data-i18n="hero.stat1">Publications</div>
-        </div>
-        <div class="hero-stat">
-          <div class="num">84<span>+</span></div>
-          <div class="lbl" data-i18n="hero.stat2">Citations</div>
-        </div>
-        <div class="hero-stat">
-          <div class="num">4</div>
-          <div class="lbl" data-i18n="hero.stat3">h-index</div>
-        </div>
-        <div class="hero-stat">
-          <div class="num">2</div>
-          <div class="lbl" data-i18n="hero.stat4">2026 Papers in Nature/Science journals</div>
-        </div>
+<header id="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow" data-i18n="hero.eyebrow">Skeletal Growth · Endocrinology · 3D Molecular Imaging</p>
+      <h1 data-i18n="hero.h1"><em>Seeing the skeleton,</em><br>cell by cell.</h1>
+      <p class="lead" data-i18n="hero.desc">We combine <strong>endocrinology</strong>, <strong>developmental biology</strong> and <strong>3D molecular imaging</strong> of intact human bone to understand how the skeleton grows, ages and fails in disease.</p>
+      <div class="btn-row">
+        <a href="#research" class="btn btn-solid" data-i18n="hero.btn1">Explore Our Research</a>
+        <a href="#publications" class="btn btn-outline" data-i18n="hero.btn2">Publications</a>
       </div>
     </div>
-    <div class="hero-right">
-      <video autoplay muted loop playsinline class="hero-video">
-        <source src="assets/videos/nbe-video-1.mp4" type="video/mp4">
-      </video>
-      <p class="hero-video-cap">Optical clearing of intact human bone · <em>Nat Biomed Eng</em> 2026</p>
+    <figure class="hero-plate">
+      <div class="plate framed">
+        <video id="heroVideo" autoplay muted playsinline preload="metadata" data-start="6" poster="assets/images/poster-nbe-video-1.jpg">
+          <source src="assets/videos/nbe-video-1.mp4#t=6" type="video/mp4">
+        </video>
+      </div>
+      <figcaption class="cap">« CD31⁺ vasculature in cleared human bone » · <em>Nat Biomed Eng</em> 2026</figcaption>
+    </figure>
+  </div>
+
+  <div class="container">
+    <div class="highlights reveal">
+      <p class="eyebrow" data-i18n="hl.label">Highlights</p>
+      <div class="hl-grid">
+        <a class="hl-item" href="https://doi.org/10.1038/s41551-026-01645-3" target="_blank" rel="noopener">
+          <span class="hl-meta">Nat Biomed Eng · 2026</span>
+          <span class="hl-title">DeepBone: quantitative 3D imaging of intact human bone</span>
+          <span class="hl-more" data-i18n="hl.read">Read →</span>
+        </a>
+        <a class="hl-item" href="https://doi.org/10.1126/scitranslmed.adw3590" target="_blank" rel="noopener">
+          <span class="hl-meta">Sci Transl Med · 2026</span>
+          <span class="hl-title">A transcriptional atlas of the pubertal human growth plate</span>
+          <span class="hl-more" data-i18n="hl.read">Read →</span>
+        </a>
+        <a class="hl-item" href="https://doi.org/10.1073/pnas.2512316122" target="_blank" rel="noopener">
+          <span class="hl-meta">PNAS · 2025</span>
+          <span class="hl-title">Growth hormone regulates the stem cell population in the growth plate</span>
+          <span class="hl-more" data-i18n="hl.read">Read →</span>
+        </a>
+        <a class="hl-item" href="#funding">
+          <span class="hl-meta">Lundgrens Foundation · 2026</span>
+          <span class="hl-title">Research grant awarded to the lab (PI)</span>
+          <span class="hl-more" data-i18n="hl.read">Read →</span>
+        </a>
+      </div>
     </div>
   </div>
-</section>
+</header>
 
-<!-- ===== IMAGING HIGHLIGHTS ===== -->
-<section id="gallery" class="bg-light">
-  <div class="container">
-    <div class="section-header centered">
-      <div class="section-label" data-i18n="gallery.label">Featured Research · Nature Biomedical Engineering 2026</div>
-      <h2 data-i18n="gallery.h2">Seeing Inside Human Bone</h2>
+<!-- ===== IMAGING STATEMENT ===== -->
+<section id="imaging">
+  <div class="container statement-grid">
+    <div class="carousel reveal" id="plateCarousel">
+      <div class="carousel-frame framed">
+        <figure class="carousel-slide is-active" data-cap="« CD31⁺ vasculature across 2 mm of aged human bone » · <em>Nat Biomed Eng</em> 2026, Fig 1c">
+          <img src="assets/figures/nbe-fig1c-cd31-vasculature-clean.png" alt="CD31-positive vasculature in aged human bone, 3D reconstruction">
+        </figure>
+        <figure class="carousel-slide" data-cap="« BM-MSCs, proliferating cells and capillaries in young human bone » · Supplementary Video 3">
+          <img src="assets/images/poster-nbe-video-3.jpg" alt="BM-MSCs, proliferating cells and capillaries in young human bone" loading="lazy">
+        </figure>
+        <figure class="carousel-slide" data-cap="« BM-MSCs, capillaries and adipocytes in young human bone » · Supplementary Video 4">
+          <img src="assets/images/poster-nbe-video-4.jpg" alt="Bone-marrow mesenchymal stromal cells in young human bone" loading="lazy">
+        </figure>
+        <figure class="carousel-slide" data-cap="« SOST mRNA detected inside the human bone matrix » · Supplementary Video 2">
+          <img src="assets/images/poster-nbe-video-2.jpg" alt="SOST-expressing cells in human bone matrix" loading="lazy">
+        </figure>
+      </div>
+      <div class="carousel-bar">
+        <p class="carousel-cap"></p>
+        <div class="carousel-ctrl">
+          <button class="prev" aria-label="Previous image">←</button>
+          <span class="carousel-count">01 / 04</span>
+          <button class="next" aria-label="Next image">→</button>
+        </div>
+      </div>
+    </div>
+    <div class="statement-text reveal">
+      <p class="eyebrow" data-i18n="gallery.label">Featured Research · Nature Biomedical Engineering 2026</p>
+      <h2 data-i18n="gallery.h2">Seeing <em>inside</em> intact human bone</h2>
       <p data-i18n="gallery.intro">We developed a tissue-clearing and lightsheet pipeline that renders intact human bone biopsies optically transparent — preserving native 3D architecture while enabling deep imaging of proteins and mRNAs. The result is the first quantitative 3D atlas of the human osteovascular niche.</p>
-      <p style="margin-top: 1rem;"><a href="https://doi.org/10.1038/s41551-026-01645-3" class="btn-primary" target="_blank" data-i18n="gallery.btn">Read the paper</a></p>
-    </div>
-    <figure class="gallery-banner">
-      <img src="assets/figures/nbe-fig3e-aged-bone-biopsy.png" alt="Whole aged human bone biopsy">
-      <figcaption data-i18n="gallery.banner.cap"><strong>Whole aged human bone biopsy</strong> — 3D reconstruction showing the full ~3.5 mm depth of an intact human bone biopsy. Yellow: CD31⁺ vasculature; cyan: bone matrix; white: adipocytes. <em>Nat Biomed Eng</em> 2026, Fig 3e.</figcaption>
-    </figure>
-    <figure class="gallery-portrait">
-      <img src="assets/figures/nbe-fig1c-cd31-vasculature.png" alt="CD31-positive vasculature in aged human bone">
-      <figcaption data-i18n="gallery.portrait.cap"><strong>CD31⁺ vasculature in aged bone</strong> — 3D reconstruction of the entire vascular network across 2 mm of cleared human bone biopsy. <em>Nat Biomed Eng</em> 2026, Fig 1c.</figcaption>
-    </figure>
-  </div>
-</section>
-
-<!-- ===== ABOUT ===== -->
-<section id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-photo">
-        <img src="assets/images/nelson-chu.jpg" alt="Nelson Chu" onerror="this.parentElement.innerHTML='<div class=\'about-photo-placeholder\'>Add your photo<br>to assets/images/nelson-chu.jpg</div>'">
-      </div>
-      <div class="about-text">
-        <div class="section-label" data-i18n="about.label">Principal Investigator</div>
-        <h2>Nelson Chu, PhD</h2>
-        <p class="about-affil" data-i18n="about.affil">
-          Researcher in Skeletal Biology · Spatial Genomics · 3D Imaging<br>
-          Gothenburg, Sweden
-        </p>
-        <p data-i18n="about.bio1">
-          My research sits at the intersection of skeletal biology and emerging technology. I use spatial transcriptomics, single-cell proteomics, and 3D computational imaging to map the molecular and cellular architecture of bone — how it develops under hormonal control, how stem cell niches are organised, and how that architecture fails in disease. This site presents my independent research vision and the direction I am building toward as a future principal investigator.
-        </p>
-        <p data-i18n="about.bio2">
-          Recent work in <em>Science Translational Medicine</em> (2026) built the first transcriptional atlas of the pubertal human growth plate, uncovering two stem cell populations and direct GH action. In parallel, work in <em>Nature Biomedical Engineering</em> (2026) applied 3D tissue clearing to quantitatively compare the osteovascular niche in aged versus young human bone.
-        </p>
-        <p data-i18n="about.bio3">
-          I am also developing open-source computational tools — including interactive 3D web viewers and network-level single-cell analysis pipelines — to make high-dimensional bone biology data accessible and interpretable.
-        </p>
-        <div class="about-links">
-          <a href="https://scholar.google.com/citations?user=eZervHIAAAAJ" target="_blank" data-i18n="about.link.scholar">Google Scholar</a>
-          <a href="https://orcid.org/0000-0002-2696-5850" target="_blank" data-i18n="about.link.orcid">ORCID</a>
-          <a href="https://www.linkedin.com/in/nelson-tsz-long-chu-223854193" target="_blank" data-i18n="about.link.linkedin">LinkedIn</a>
-          <a href="mailto:tsz.long.chu@gu.se" data-i18n="about.link.email">Email</a>
-        </div>
-      </div>
+      <a href="https://doi.org/10.1038/s41551-026-01645-3" class="btn btn-outline" target="_blank" rel="noopener" data-i18n="gallery.btn">Read the paper</a>
     </div>
   </div>
 </section>
 
 <!-- ===== RESEARCH ===== -->
-<section id="research" class="bg-light">
+<section id="research" class="tone">
   <div class="container">
-    <div class="section-header">
-      <div class="section-label" data-i18n="research.label">What We Do</div>
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="research.label">What We Do</p>
       <h2 data-i18n="research.h2">Research Directions</h2>
-      <p data-i18n="research.intro">We are a spatial and computational biology lab focused on the skeleton. Our work spans technique development, mechanistic biology, and translational disease applications.</p>
+      <p class="section-intro" data-i18n="research.intro">Three connected projects — basic, translational and clinical — share one engine: 3D molecular imaging of intact bone, single-cell sequencing and mouse genetics.</p>
     </div>
-    <div class="research-grid">
-      <div class="research-card">
-        <div class="research-icon">🗺️</div>
-        <h3 data-i18n="research.c1.h3">Spatial Multi-Omics of Bone</h3>
-        <p data-i18n="research.c1.p">We apply MERFISH and spatial transcriptomics to map gene expression in intact skeletal tissue, revealing the cell-type niches, signalling gradients, and hormonal response programmes that govern bone homeostasis and growth.</p>
+    <div class="theme-grid">
+      <article class="theme reveal">
+        <span class="theme-num">01</span>
+        <div>
+          <h3 data-i18n="research.c1.h3">Cell Fate: Cartilage to Bone</h3>
+          <p data-i18n="research.c1.p">Hypertrophic chondrocytes in the growth plate can survive and become bone-forming osteoblasts. We ask what decides this switch, and how it could be used to improve bone-building drugs and fracture repair.</p>
+        </div>
+      </article>
+      <article class="theme reveal">
+        <span class="theme-num">02</span>
+        <div>
+          <h3 data-i18n="research.c2.h3">Growth Hormone and the Growth Plate</h3>
+          <p data-i18n="research.c2.p">Growth hormone acts directly on growth-plate stem cells. We study how growth-hormone treatments, including new weekly long-acting forms, affect these stem cells and metabolism — to make growth treatment for children safer.</p>
+        </div>
+      </article>
+      <article class="theme reveal">
+        <span class="theme-num">03</span>
+        <div>
+          <h3 data-i18n="research.c3.h3">Skeletal Disease in 3D</h3>
+          <p data-i18n="research.c3.p">We map diseased human bone, such as osteonecrosis of the femoral head, cell by cell in 3D, and extend rapid 3D molecular pathology to mineralised tissue.</p>
+        </div>
+      </article>
+      <article class="theme reveal">
+        <span class="theme-num">04</span>
+        <div>
+          <h3 data-i18n="research.c4.h3">Platform: 3D Molecular Imaging</h3>
+          <p data-i18n="research.c4.p">DeepBone combines tissue clearing, whole-mount RNA and protein labelling, light-sheet microscopy and registration to micro-CT, analysed together with single-cell sequencing data.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container about-grid">
+    <div class="about-photo reveal">
+      <img src="assets/images/nelson-chu-portrait.jpg" alt="Nelson Chu" class="framed-img">
+    </div>
+    <div class="about-text reveal">
+      <p class="eyebrow" data-i18n="about.label">Principal Investigator</p>
+      <h2>Nelson Chu, PhD</h2>
+      <p class="about-affil" data-i18n="about.affil">Researcher · Department of Rheumatology and Inflammation Research<br>Institute of Medicine, University of Gothenburg, Sweden</p>
+      <p data-i18n="about.bio1">I study how the skeleton grows, ages and fails in disease — at the scale of single cells inside intact tissue. My work brings together endocrinology (how growth hormone and PTH act on bone), developmental biology (growth-plate stem cells and the cartilage-to-bone cell-fate switch) and 3D molecular imaging of human bone.</p>
+      <p data-i18n="about.bio2">In <em>Science Translational Medicine</em> (2026) we built a transcriptional atlas of the pubertal human growth plate and showed that growth hormone acts directly on cartilage stem cells, building on our work in <em>PNAS</em> (2025). In <em>Nature Biomedical Engineering</em> (2026) I developed DeepBone, a tissue-clearing and light-sheet pipeline for 3D RNA and protein imaging of intact human bone, and used it to compare the osteovascular niche of young and aged bone.</p>
+      <p data-i18n="about.bio3">I trained in developmental genetics at the University of Hong Kong (PhD with Kathryn Cheah) and in growth-plate endocrinology at Karolinska Institutet (postdoc with Andrei Chagin), and now lead an independent line on 3D molecular imaging of human bone in Gothenburg.</p>
+      <div class="figures">
+        <div class="figure"><div class="n">4</div><div class="l" data-i18n="hero.stat1">First-author papers</div></div>
+        <div class="figure"><div class="n">9</div><div class="l" data-i18n="hero.stat3">Press features</div></div>
+        <div class="figure"><div class="n">140<span>+</span></div><div class="l" data-i18n="hero.stat4">Citations</div></div>
       </div>
-      <div class="research-card">
-        <div class="research-icon">🔭</div>
-        <h3 data-i18n="research.c2.h3">3D Imaging & Tissue Architecture</h3>
-        <p data-i18n="research.c2.p">Using lightsheet microscopy and microCT combined with tissue-clearing protocols, we reconstruct bone vasculature, stem cell niches, and cellular organisation from subcellular to whole-organ scale — and build interactive web-based 3D viewers to share them.</p>
-      </div>
-      <div class="research-card">
-        <div class="research-icon">💻</div>
-        <h3 data-i18n="research.c3.h3">Computational Biology</h3>
-        <p data-i18n="research.c3.p">We develop and apply single-cell network analysis tools (hdWGCNA, DeepCell surfactome pipeline), cell-cell communication inference (CellChat, SCENIC), and machine-learning-based segmentation to make sense of multi-modal skeletal datasets.</p>
-      </div>
-      <div class="research-card">
-        <div class="research-icon">🦴</div>
-        <h3 data-i18n="research.c4.h3">Skeletal Development & Disease</h3>
-        <p data-i18n="research.c4.p">From the growth hormone axis in puberty to osteovascular ageing and osteoporosis, we investigate the druggable molecular mechanisms that determine how bone grows, how it is maintained, and how it breaks down — with an eye toward therapeutic applications.</p>
+      <div class="text-links">
+        <a href="https://scholar.google.com/citations?user=eZervHIAAAAJ" target="_blank" rel="noopener" data-i18n="about.link.scholar">Google Scholar</a>
+        <a href="https://orcid.org/0000-0001-8553-6880" target="_blank" rel="noopener" data-i18n="about.link.orcid">ORCID</a>
+        <a href="https://www.linkedin.com/in/nelson-tsz-long-chu-223854193" target="_blank" rel="noopener" data-i18n="about.link.linkedin">LinkedIn</a>
+        <a href="mailto:tsz.long.chu@gu.se" data-i18n="about.link.email">Email</a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ===== PUBLICATIONS ===== -->
-<section id="publications">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-label" data-i18n="pub.label">Selected Work</div>
+<section id="publications" class="tone">
+  <div class="container pub-grid">
+    <div class="pub-aside reveal">
+      <p class="eyebrow" data-i18n="pub.label">Selected Work</p>
       <h2 data-i18n="pub.h2">Publications</h2>
-      <a href="https://scholar.google.com/citations?user=eZervHIAAAAJ" class="scholar-link" target="_blank" data-i18n="pub.scholar">Full list on Google Scholar →</a>
+      <a href="https://scholar.google.com/citations?user=eZervHIAAAAJ" class="btn btn-outline" target="_blank" rel="noopener" data-i18n="pub.scholar">Full list on Google Scholar →</a>
     </div>
+    <div class="pub-main">
+      <h3 class="pub-group" data-i18n="pub.selected.heading">Selected Publications</h3>
+      <ol class="pub-list">
+        <li class="pub reveal">
+          <p class="pub-meta"><span>Sci Transl Med</span><span class="yr">2026</span></p>
+          <a class="pub-title" href="https://doi.org/10.1126/scitranslmed.adw3590" target="_blank" rel="noopener">A transcriptional atlas of the pubertal human growth plate reveals two populations of stem cells and direct effect of growth hormone</a>
+          <p class="pub-authors"><strong>Chu NTL</strong>*, Dregval O*, Zaman F, Li L, Tian X, et al. <span data-i18n="pub.cofirst"><em>(co-first author)</em></span></p>
+          <a class="pub-doi" href="https://doi.org/10.1126/scitranslmed.adw3590" target="_blank" rel="noopener">doi:10.1126/scitranslmed.adw3590</a>
+        </li>
+        <li class="pub reveal">
+          <p class="pub-meta"><span>Nat Biomed Eng</span><span class="yr">2026</span></p>
+          <a class="pub-title" href="https://doi.org/10.1038/s41551-026-01645-3" target="_blank" rel="noopener">Three-dimensional quantitative tissue clearing reveals differences in osteovascular niche of aged and young human mesenchymal stromal cells</a>
+          <p class="pub-authors"><strong>Chu NTL</strong>, Dregval O, Chang Y-W, et al. <span data-i18n="pub.first"><em>(first author)</em></span></p>
+          <a class="pub-doi" href="https://doi.org/10.1038/s41551-026-01645-3" target="_blank" rel="noopener">doi:10.1038/s41551-026-01645-3</a>
+        </li>
+        <li class="pub reveal">
+          <p class="pub-meta"><span>PNAS</span><span class="yr">2025</span></p>
+          <a class="pub-title" href="https://doi.org/10.1073/pnas.2512316122" target="_blank" rel="noopener">Growth hormone regulates the stem cell population in the growth plate</a>
+          <p class="pub-authors"><strong>Chu NTL</strong>*, Zhou B*, Heinonen JO, Dregval O, Liu X, et al. <span data-i18n="pub.cofirst"><em>(co-first author)</em></span></p>
+          <a class="pub-doi" href="https://doi.org/10.1073/pnas.2512316122" target="_blank" rel="noopener">doi:10.1073/pnas.2512316122</a>
+        </li>
+        <li class="pub reveal">
+          <p class="pub-meta"><span>eLife</span><span class="yr">2023</span></p>
+          <a class="pub-title" href="https://doi.org/10.7554/eLife.82142" target="_blank" rel="noopener">MMP14 cleaves PTH1R in the chondrocyte-derived osteoblast lineage, curbing signalling intensity for proper bone anabolism</a>
+          <p class="pub-authors"><strong>Chu NTL</strong>, …, Cheah KSE. <span data-i18n="pub.first"><em>(first author)</em></span></p>
+          <a class="pub-doi" href="https://doi.org/10.7554/eLife.82142" target="_blank" rel="noopener">doi:10.7554/eLife.82142</a>
+        </li>
+      </ol>
 
-    <!-- Selected Publications -->
-    <div class="pub-category">
-      <h3 class="pub-category-heading pub-selected-heading" data-i18n="pub.selected.heading">Selected Publications</h3>
-      <div class="pub-list">
-
-        <div class="pub-item">
-          <div class="pub-badge journal-stm">Sci Transl Med</div>
-          <div class="pub-content">
-            <div class="pub-year">2026</div>
-            <p class="pub-title">A transcriptional atlas of the pubertal human growth plate reveals two populations of stem cells and direct effect of growth hormone</p>
-            <p class="pub-authors"><strong>Chu NTL</strong>, Dregval O, Zaman F, Li L, Tian X, et al.</p>
-            <a href="https://doi.org/10.1126/scitranslmed.adw3590" class="pub-doi" target="_blank">doi:10.1126/scitranslmed.adw3590</a>
-          </div>
-        </div>
-
-        <div class="pub-item">
-          <div class="pub-badge journal-nbe">Nat Biomed Eng</div>
-          <div class="pub-content">
-            <div class="pub-year">2026</div>
-            <p class="pub-title">Three-dimensional quantitative tissue clearing reveals differences in osteovascular niche of aged and young human mesenchymal stromal cells</p>
-            <p class="pub-authors"><strong>Chu NTL</strong>, Dregval O, Chang Y-W, et al.</p>
-            <a href="https://doi.org/10.1038/s41551-026-01645-3" class="pub-doi" target="_blank">doi:10.1038/s41551-026-01645-3</a>
-          </div>
-        </div>
-
-        <div class="pub-item">
-          <div class="pub-badge journal-pnas">PNAS</div>
-          <div class="pub-content">
-            <div class="pub-year">2025</div>
-            <p class="pub-title">Growth hormone regulates the stem cell population in the growth plate</p>
-            <p class="pub-authors"><strong>Chu NTL</strong>*, Zhou B*, Heinonen JO, Dregval O, Liu X, et al. <span data-i18n="pub.cofirst"><em>(co-first author)</em></span></p>
-            <a href="https://doi.org/10.1073/pnas.2512316122" class="pub-doi" target="_blank">doi:10.1073/pnas.2512316122</a>
-          </div>
-        </div>
-
-        <div class="pub-item">
-          <div class="pub-badge journal-elife">eLife</div>
-          <div class="pub-content">
-            <div class="pub-year">2023</div>
-            <p class="pub-title">MMP14 cleaves PTH1R in the chondrocyte-derived osteoblast lineage, curbing signalling intensity for proper bone anabolism</p>
-            <p class="pub-authors"><strong>Chu NTL</strong>, …, Cheah KSE. <span data-i18n="pub.first"><em>(first author)</em></span></p>
-            <a href="https://doi.org/10.7554/eLife.82142" class="pub-doi" target="_blank">doi:10.7554/eLife.82142</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Co-authored Publications -->
-    <div class="pub-category">
-      <h3 class="pub-category-heading pub-coauth-heading" data-i18n="pub.coauth.heading">Co-authored Publications</h3>
-      <div class="pub-list">
-
-        <div class="pub-item">
-          <div class="pub-badge journal-ncomm">Nat Commun</div>
-          <div class="pub-content">
-            <div class="pub-year">2026</div>
-            <p class="pub-title">Identification of ephrin-A1–EphA2 signalling as a potential target for fracture prevention</p>
-            <p class="pub-authors">Movérare-Skrtic S, Nethander M, Li L, <strong>Chu NTL</strong>, Dregval O, Tian X, et al.</p>
-            <a href="https://doi.org/10.1038/s41467-026-69863-6" class="pub-doi" target="_blank">doi:10.1038/s41467-026-69863-6</a>
-          </div>
-        </div>
-
-        <div class="pub-item">
-          <div class="pub-badge journal-ncb">Nat Cell Biol</div>
-          <div class="pub-content">
-            <div class="pub-year">2024</div>
-            <p class="pub-title">Specialized post-arterial capillaries facilitate adult bone remodelling</p>
-            <p class="pub-authors">Mohanakrishnan V, Sivaraj KK, Jeong HW, Bovay E, Dharmalingam B, <strong>Chu NTL</strong>, …, Chagin AS, Adams RH.</p>
-            <a href="https://doi.org/10.1038/s41556-024-01545-1" class="pub-doi" target="_blank">doi:10.1038/s41556-024-01545-1</a>
-          </div>
-        </div>
-
-        <div class="pub-item">
-          <div class="pub-badge journal-jci">JCI Insight</div>
-          <div class="pub-content">
-            <div class="pub-year">2024</div>
-            <p class="pub-title">Stimulation of skeletal stem cells in the growth plate promotes linear bone growth</p>
-            <p class="pub-authors">Trompet D, Kurenkova AD, Zhou B, Li L, Dregval O, Usanova AP, <strong>Chu NTL</strong>, …, Chagin AS.</p>
-            <a href="https://doi.org/10.1172/jci.insight.165226" class="pub-doi" target="_blank">doi:10.1172/jci.insight.165226</a>
-          </div>
-        </div>
-
-        <div class="pub-item">
-          <div class="pub-badge journal-review">Curr Osteoporos Rep</div>
-          <div class="pub-content">
-            <div class="pub-year">2023</div>
-            <p class="pub-title">The origin and fate of chondrocytes: cell plasticity in physiological setting</p>
-            <p class="pub-authors">Chagin AS, <strong>Chu NTL</strong>.</p>
-            <a href="https://doi.org/10.1007/s11914-023-00827-1" class="pub-doi" target="_blank">doi:10.1007/s11914-023-00827-1</a>
-          </div>
-        </div>
-
-      </div>
+      <h3 class="pub-group" data-i18n="pub.coauth.heading">Co-authored Publications</h3>
+      <ol class="pub-list">
+        <li class="pub reveal">
+          <p class="pub-meta"><span>Nat Commun</span><span class="yr">2026</span></p>
+          <a class="pub-title" href="https://doi.org/10.1038/s41467-026-69863-6" target="_blank" rel="noopener">Identification of ephrin-A1–EphA2 signalling as a potential target for fracture prevention</a>
+          <p class="pub-authors">Movérare-Skrtic S, Nethander M, Li L, <strong>Chu NTL</strong>, Dregval O, Tian X, et al.</p>
+          <a class="pub-doi" href="https://doi.org/10.1038/s41467-026-69863-6" target="_blank" rel="noopener">doi:10.1038/s41467-026-69863-6</a>
+        </li>
+        <li class="pub reveal">
+          <p class="pub-meta"><span>Nat Cell Biol</span><span class="yr">2024</span></p>
+          <a class="pub-title" href="https://doi.org/10.1038/s41556-024-01545-1" target="_blank" rel="noopener">Specialized post-arterial capillaries facilitate adult bone remodelling</a>
+          <p class="pub-authors">Mohanakrishnan V, Sivaraj KK, Jeong HW, Bovay E, Dharmalingam B, <strong>Chu NTL</strong>, …, Chagin AS, Adams RH.</p>
+          <a class="pub-doi" href="https://doi.org/10.1038/s41556-024-01545-1" target="_blank" rel="noopener">doi:10.1038/s41556-024-01545-1</a>
+        </li>
+        <li class="pub reveal">
+          <p class="pub-meta"><span>JCI Insight</span><span class="yr">2024</span></p>
+          <a class="pub-title" href="https://doi.org/10.1172/jci.insight.165226" target="_blank" rel="noopener">Stimulation of skeletal stem cells in the growth plate promotes linear bone growth</a>
+          <p class="pub-authors">Trompet D, Kurenkova AD, Zhou B, Li L, Dregval O, Usanova AP, <strong>Chu NTL</strong>, …, Chagin AS.</p>
+          <a class="pub-doi" href="https://doi.org/10.1172/jci.insight.165226" target="_blank" rel="noopener">doi:10.1172/jci.insight.165226</a>
+        </li>
+        <li class="pub reveal">
+          <p class="pub-meta"><span>Curr Osteoporos Rep</span><span class="yr">2023</span></p>
+          <a class="pub-title" href="https://doi.org/10.1007/s11914-023-00827-1" target="_blank" rel="noopener">The origin and fate of chondrocytes: cell plasticity in physiological setting</a>
+          <p class="pub-authors">Chagin AS, <strong>Chu NTL</strong>.</p>
+          <a class="pub-doi" href="https://doi.org/10.1007/s11914-023-00827-1" target="_blank" rel="noopener">doi:10.1007/s11914-023-00827-1</a>
+        </li>
+      </ol>
     </div>
   </div>
 </section>
 
-<!-- ===== NEWS ===== -->
-<section id="news" class="bg-light">
+<!-- ===== FULL-BLEED IMAGE BAND ===== -->
+<section class="band" aria-label="Whole aged human bone biopsy">
+  <img src="assets/figures/nbe-fig3e-aged-bone-biopsy-clean.png" alt="Whole aged human bone biopsy in 3D" loading="lazy">
   <div class="container">
-    <div class="section-header">
-      <div class="section-label" data-i18n="news.label">Press Coverage</div>
-      <h2 data-i18n="news.h2">News Coverage</h2>
-    </div>
-    <div class="news-list">
-
-      <div class="news-item">
-        <div class="news-source">@erturklab · X</div>
-        <a href="https://x.com/erturklab/status/2045505829621686705" class="news-headline" target="_blank" rel="noopener">Meet DeepBone: quantitative 3D mapping of human bone marrow niches reveals how stromal cell organization changes with aging</a>
-        <div class="news-paper-tag journal-nbe">Nat Biomed Eng 2026</div>
-      </div>
-
-      <div class="news-item">
-        <div class="news-source">Bioengineer.org</div>
-        <a href="https://bioengineer.org/3d-tissue-clearing-reveals-age-impact-on-bone-cells" class="news-headline" target="_blank" rel="noopener">3D Tissue Clearing Reveals Age Impact on Bone Cells</a>
-        <div class="news-paper-tag journal-nbe">Nat Biomed Eng 2026</div>
-      </div>
-
-      <div class="news-item">
-        <div class="news-source">GeneOnline</div>
-        <a href="https://www.geneonline.com/3d-tissue-clearing-reveals-age-related-differences-in-osteovascular-microenvironment-of-mesenchymal-stromal-cells" class="news-headline" target="_blank" rel="noopener">3D Tissue Clearing Reveals Age-Related Differences in Osteovascular Microenvironment of Mesenchymal Stromal Cells</a>
-        <div class="news-paper-tag journal-nbe">Nat Biomed Eng 2026</div>
-      </div>
-
-      <div class="news-item">
-        <div class="news-source">MedicalXpress</div>
-        <a href="https://medicalxpress.com/news/2026-04-previously-unknown-stem-cells-power.html" class="news-headline" target="_blank" rel="noopener">Previously unknown stem cells may power children's height gain</a>
-        <div class="news-paper-tag journal-stm">Sci Transl Med 2026</div>
-      </div>
-
-      <div class="news-item">
-        <div class="news-source">GU Press</div>
-        <a href="https://www.gu.se/en/news/newly-identified-cells-key-to-how-childrens-height-growth" class="news-headline" target="_blank" rel="noopener">Newly identified cells key to how children's height growth</a>
-        <div class="news-paper-tag journal-stm">Sci Transl Med 2026</div>
-      </div>
-
-      <div class="news-item">
-        <div class="news-source">Mirage News</div>
-        <a href="https://www.miragenews.com/newly-found-cells-crucial-to-kids-height-growth-1657298/" class="news-headline" target="_blank" rel="noopener">Newly found cells crucial to kids' height growth</a>
-        <div class="news-paper-tag journal-stm">Sci Transl Med 2026</div>
-      </div>
-
-      <div class="news-item">
-        <div class="news-source">EurekAlert</div>
-        <a href="https://www.eurekalert.org/news-releases/1109060" class="news-headline" target="_blank" rel="noopener">A delicate balance between growth hormone and stem cells</a>
-        <div class="news-paper-tag journal-pnas">PNAS 2025</div>
-      </div>
-
-      <div class="news-item">
-        <div class="news-source">GU Press</div>
-        <a href="https://www.gu.se/en/news/a-delicate-balance-between-growth-hormone-and-stem-cells" class="news-headline" target="_blank" rel="noopener">A delicate balance between growth hormone and stem cells</a>
-        <div class="news-paper-tag journal-pnas">PNAS 2025</div>
-      </div>
-
-      <div class="news-item">
-        <div class="news-source">MedicalXpress</div>
-        <a href="https://medicalxpress.com/news/2025-12-growth-hormone-stem-cells-bone.html" class="news-headline" target="_blank" rel="noopener">Growth hormone directly regulates stem cells in bone growth plates</a>
-        <div class="news-paper-tag journal-pnas">PNAS 2025</div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ===== FUNDING ===== -->
-<section id="funding" class="bg-light">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-label" data-i18n="funding.label">Research Support</div>
-      <h2 data-i18n="funding.h2">Funding</h2>
-      <p data-i18n="funding.intro">Grants and fellowships supporting the lab's research vision.</p>
-    </div>
-
-    <div class="funding-list">
-
-      <!-- Lundgrens 2026 -->
-      <div class="funding-item">
-        <div class="funding-year">2026</div>
-        <div class="funding-content">
-          <h3 class="funding-title" data-i18n="funding.lundgrens.title">Lundgrens Foundation</h3>
-          <p class="funding-meta">
-            <span class="funding-role" data-i18n="funding.role.pi">Principal Investigator</span>
-          </p>
-          <p class="funding-desc" data-i18n="funding.lundgrens.desc">Awarded research grant supporting work on skeletal biology and 3D imaging of bone.</p>
-        </div>
-      </div>
-
-      <!-- Placeholder cards — replace with your other awarded grants -->
-
-    </div>
+    <p class="band-cap" data-i18n="gallery.banner.cap"><strong>Whole aged human bone biopsy</strong> — 3D reconstruction showing the full ~3.5 mm depth of an intact human bone biopsy. Yellow: CD31⁺ vasculature; cyan: bone matrix; white: adipocytes. <em>Nat Biomed Eng</em> 2026, Fig 3e.</p>
   </div>
 </section>
 
 <!-- ===== TECHNOLOGIES ===== -->
-<section id="technologies" class="bg-dark">
+<section id="technologies">
   <div class="container">
-    <div class="section-header">
-      <div class="section-label" data-i18n="tech.label">Our Toolkit</div>
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="tech.label">Our Toolkit</p>
       <h2 data-i18n="tech.h2">Technologies</h2>
-      <p style="color:rgba(255,255,255,0.55);" data-i18n="tech.intro">We combine wet-lab imaging with computational analysis to produce fully integrated, multi-modal datasets of the skeleton.</p>
+      <p class="section-intro" data-i18n="tech.intro">We combine 3D imaging of intact tissue with single-cell genomics and mouse genetics to produce integrated, multimodal datasets of the skeleton.</p>
     </div>
-    <div class="tech-grid">
+    <div class="tech-grid reveal">
       <div class="tech-item">
-        <span class="tech-name" data-i18n="tech.t1.n">Spatial Transcriptomics</span>
-        <span class="tech-detail">MERFISH · Vizgen MERSCOPE · 10x Visium</span>
+        <span class="tech-idx">01</span>
+        <span class="tech-name" data-i18n="tech.t1.n">3D Molecular Imaging</span>
+        <span class="tech-detail">Tissue clearing (DeepBone) · Whole-mount RNA (HCR) &amp; immunostaining · Light-sheet microscopy</span>
       </div>
       <div class="tech-item">
-        <span class="tech-name" data-i18n="tech.t2.n">3D Imaging</span>
-        <span class="tech-detail">Lightsheet Microscopy · MicroCT · Tissue Clearing (iDISCO+)</span>
+        <span class="tech-idx">02</span>
+        <span class="tech-name" data-i18n="tech.t2.n">Multimodal Registration</span>
+        <span class="tech-detail">Micro-CT · Light-sheet ↔ CT registration · 3D quantification</span>
       </div>
       <div class="tech-item">
+        <span class="tech-idx">03</span>
         <span class="tech-name" data-i18n="tech.t3.n">Single-Cell Genomics</span>
-        <span class="tech-detail">scRNA-seq · snRNA-seq · Multiome</span>
+        <span class="tech-detail">scRNA-seq · Trajectory &amp; RNA velocity</span>
       </div>
       <div class="tech-item">
-        <span class="tech-name" data-i18n="tech.t4.n">Network & Cell Communication</span>
-        <span class="tech-detail">hdWGCNA · CellChat · SCENIC · NicheNet</span>
+        <span class="tech-idx">04</span>
+        <span class="tech-name" data-i18n="tech.t4.n">Gene Networks &amp; Cell Communication</span>
+        <span class="tech-detail">SCENIC · CellChat · hdWGCNA</span>
       </div>
       <div class="tech-item">
-        <span class="tech-name" data-i18n="tech.t5.n">Proteomics Integration</span>
-        <span class="tech-detail">Surfactome Pipeline · DeepCell · Mass Spec Annotation</span>
+        <span class="tech-idx">05</span>
+        <span class="tech-name" data-i18n="tech.t5.n">Mouse Genetics</span>
+        <span class="tech-detail">Lineage tracing (Col10a1-CreERT2, Confetti) · Conditional knockouts</span>
       </div>
       <div class="tech-item">
-        <span class="tech-name" data-i18n="tech.t6.n">Interactive 3D Visualisation</span>
-        <span class="tech-detail">Three.js · WebGL · Custom Web Viewers</span>
+        <span class="tech-idx">06</span>
+        <span class="tech-name" data-i18n="tech.t6.n">Human Tissue &amp; Explants</span>
+        <span class="tech-detail">Growth-plate &amp; bone biopsies · Ex vivo explant culture</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VIDEOS ===== -->
+<section id="videos" class="tone">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="video.label">Research in Motion</p>
+      <h2 data-i18n="video.h2">3D Imaging Videos</h2>
+      <p class="section-intro" data-i18n="video.intro">Supplementary videos from <em>Nature Biomedical Engineering</em> (2026) — direct visualisation of the human osteovascular niche.</p>
+    </div>
+    <div class="video-grid">
+      <div class="video-item reveal">
+        <video muted playsinline controls preload="none" data-start="6" poster="assets/images/poster-nbe-video-1.jpg" class="video-player lazy-video">
+          <source src="assets/videos/nbe-video-1.mp4#t=6" type="video/mp4">
+        </video>
+        <p class="video-caption" data-i18n="video.v1"><strong>Video 1 · Vasculature in aged human bone marrow</strong><br>Visualisation and quantification of the CD31⁺ vasculature in aged human bone marrow.</p>
+      </div>
+      <div class="video-item reveal">
+        <video muted playsinline controls preload="none" data-start="6.5" poster="assets/images/poster-nbe-video-2.jpg" class="video-player lazy-video">
+          <source src="assets/videos/nbe-video-2.mp4#t=6.5" type="video/mp4">
+        </video>
+        <p class="video-caption" data-i18n="video.v2"><strong>Video 2 · mRNA detection inside the bone matrix</strong><br>DeepBone detects mRNA transcripts (SOST) inside the mineralised human bone matrix.</p>
+      </div>
+      <div class="video-item reveal">
+        <video muted playsinline controls preload="none" data-start="6" poster="assets/images/poster-nbe-video-3.jpg" class="video-player lazy-video">
+          <source src="assets/videos/nbe-video-3.mp4#t=6" type="video/mp4">
+        </video>
+        <p class="video-caption" data-i18n="video.v3"><strong>Video 3 · BM-MSCs and proliferating cells</strong><br>Spatial arrangement of BM-MSCs (CXCL12⁺), proliferating cells (Ki67⁺) and capillaries in young human bone.</p>
+      </div>
+      <div class="video-item reveal">
+        <video muted playsinline controls preload="none" data-start="6" poster="assets/images/poster-nbe-video-4.jpg" class="video-player lazy-video">
+          <source src="assets/videos/nbe-video-4.mp4#t=6" type="video/mp4">
+        </video>
+        <p class="video-caption" data-i18n="video.v4"><strong>Video 4 · BM-MSCs, capillaries and adipocytes</strong><br>Spatial arrangement of BM-MSCs, capillaries and adipocytes (perilipin⁺) in young human bone.</p>
       </div>
     </div>
   </div>
@@ -402,82 +368,116 @@
 
 <!-- ===== TEAM ===== -->
 <section id="team">
+  <div class="lab-top" aria-hidden="true"></div>
   <div class="container">
-    <div class="section-header">
-      <div class="section-label" data-i18n="team.label">People</div>
-      <h2 data-i18n="team.h2">The Team</h2>
-    </div>
-    <div class="team-grid">
-
-      <div class="team-card">
-        <div class="team-photo">
-          <img src="assets/images/nelson-chu.jpg" alt="Nelson Chu" onerror="this.style.display='none'">
+    <div class="lab-card reveal">
+      <p class="eyebrow" data-i18n="team.label">The Lab</p>
+      <h2 data-i18n="lab.h2">Building a lab where <em>endocrinology</em>, <em>developmental biology</em> and <em>3D imaging</em> meet at one bench.</h2>
+      <div class="lab-pi">
+        <img src="assets/images/nelson-chu-avatar.jpg" alt="Nelson Chu">
+        <div>
+          <p class="lab-pi-name">Nelson Chu, PhD</p>
+          <p class="lab-pi-role" data-i18n="team.pi.role">Principal Investigator</p>
+          <p class="lab-pi-affil" data-i18n="team.pi.affil">Skeletal Growth · 3D Molecular Imaging</p>
         </div>
-        <h3>Nelson Chu, PhD</h3>
-        <p class="team-role" data-i18n="team.pi.role">Principal Investigator</p>
-        <p class="team-affil" data-i18n="team.pi.affil">Skeletal Biology · Spatial Genomics</p>
       </div>
-
-      <div class="team-card ai-card">
-        <div class="team-photo ai-photo">🐖</div>
-        <h3>猪猪</h3>
-        <p class="team-role" data-i18n="team.ai.role">AI Research Assistant</p>
-        <p class="team-affil">Claude Sonnet · In silico</p>
-        <p class="team-duties" data-i18n="team.sonnet.duties">Admin · Emails · Web Search · Mouse Husbandry</p>
+      <p class="lab-join" data-i18n="team.join.p">We are building a team. If you are excited about skeletal biology, endocrinology or 3D imaging of human tissue, we would like to hear from you — PhD students, postdocs and visiting students are welcome.</p>
+      <div class="btn-row">
+        <a href="#contact" class="btn btn-solid" data-i18n="team.join.btn">Get in touch</a>
+        <a href="https://scholar.google.com/citations?user=eZervHIAAAAJ" class="btn btn-outline" target="_blank" rel="noopener" data-i18n="about.link.scholar">Google Scholar</a>
       </div>
-
-      <div class="team-card ai-card">
-        <div class="team-photo ai-photo claude-photo"><img src="assets/images/clawd.svg" alt="Clawd" class="claude-svg"></div>
-        <h3>Opus</h3>
-        <p class="team-role" data-i18n="team.ai.role">AI Research Assistant</p>
-        <p class="team-affil">Claude Opus · In silico</p>
-        <p class="team-duties" data-i18n="team.opus.duties">Deep Reasoning · Bioinformatics · Strategic Planning</p>
-      </div>
-
-    </div>
-
-    <div class="join-us">
-      <div>
-        <h3 data-i18n="team.join.h3">Join Us</h3>
-        <p data-i18n="team.join.p">We are building a team. If you are excited about spatial biology, 3D imaging, or computational approaches to skeletal research, we want to hear from you — postdocs, PhD students, and rotation students welcome.</p>
-      </div>
-      <a href="#contact" class="btn-primary" data-i18n="team.join.btn">Get in touch</a>
     </div>
   </div>
 </section>
 
-<!-- ===== VIDEOS ===== -->
-<section id="videos" class="bg-light">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-label" data-i18n="video.label">Research in Motion</div>
-      <h2 data-i18n="video.h2">3D Imaging Videos</h2>
-      <p data-i18n="video.intro">Supplementary videos from <em>Nature Biomedical Engineering</em> (2026) — direct visualisation of the human osteovascular niche.</p>
+<!-- ===== NEWS & FUNDING ===== -->
+<section id="news">
+  <div class="container news-grid">
+    <div class="news-col">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="news.label">Press Coverage</p>
+        <h2 data-i18n="news.h2">News Coverage</h2>
+      </div>
+      <ul class="news-list reveal">
+        <li class="news-item">
+          <span class="news-source">@erturklab · X</span>
+          <a href="https://x.com/erturklab/status/2045505829621686705" class="news-headline" target="_blank" rel="noopener">Meet DeepBone: quantitative 3D mapping of human bone marrow niches reveals how stromal cell organization changes with aging</a>
+          <span class="news-tag">Nat Biomed Eng 2026</span>
+        </li>
+        <li class="news-item">
+          <span class="news-source">Bioengineer.org</span>
+          <a href="https://bioengineer.org/3d-tissue-clearing-reveals-age-impact-on-bone-cells" class="news-headline" target="_blank" rel="noopener">3D Tissue Clearing Reveals Age Impact on Bone Cells</a>
+          <span class="news-tag">Nat Biomed Eng 2026</span>
+        </li>
+        <li class="news-item">
+          <span class="news-source">GeneOnline</span>
+          <a href="https://www.geneonline.com/3d-tissue-clearing-reveals-age-related-differences-in-osteovascular-microenvironment-of-mesenchymal-stromal-cells" class="news-headline" target="_blank" rel="noopener">3D Tissue Clearing Reveals Age-Related Differences in Osteovascular Microenvironment of Mesenchymal Stromal Cells</a>
+          <span class="news-tag">Nat Biomed Eng 2026</span>
+        </li>
+        <li class="news-item">
+          <span class="news-source">MedicalXpress</span>
+          <a href="https://medicalxpress.com/news/2026-04-previously-unknown-stem-cells-power.html" class="news-headline" target="_blank" rel="noopener">Previously unknown stem cells may power children's height gain</a>
+          <span class="news-tag">Sci Transl Med 2026</span>
+        </li>
+        <li class="news-item">
+          <span class="news-source">GU Press</span>
+          <a href="https://www.gu.se/en/news/newly-identified-cells-key-to-how-childrens-height-growth" class="news-headline" target="_blank" rel="noopener">Newly identified cells key to how children's height growth</a>
+          <span class="news-tag">Sci Transl Med 2026</span>
+        </li>
+        <li class="news-item">
+          <span class="news-source">Mirage News</span>
+          <a href="https://www.miragenews.com/newly-found-cells-crucial-to-kids-height-growth-1657298/" class="news-headline" target="_blank" rel="noopener">Newly found cells crucial to kids' height growth</a>
+          <span class="news-tag">Sci Transl Med 2026</span>
+        </li>
+        <li class="news-item">
+          <span class="news-source">EurekAlert</span>
+          <a href="https://www.eurekalert.org/news-releases/1109060" class="news-headline" target="_blank" rel="noopener">A delicate balance between growth hormone and stem cells</a>
+          <span class="news-tag">PNAS 2025</span>
+        </li>
+        <li class="news-item">
+          <span class="news-source">GU Press</span>
+          <a href="https://www.gu.se/en/news/a-delicate-balance-between-growth-hormone-and-stem-cells" class="news-headline" target="_blank" rel="noopener">A delicate balance between growth hormone and stem cells</a>
+          <span class="news-tag">PNAS 2025</span>
+        </li>
+        <li class="news-item">
+          <span class="news-source">MedicalXpress</span>
+          <a href="https://medicalxpress.com/news/2025-12-growth-hormone-stem-cells-bone.html" class="news-headline" target="_blank" rel="noopener">Growth hormone directly regulates stem cells in bone growth plates</a>
+          <span class="news-tag">PNAS 2025</span>
+        </li>
+      </ul>
     </div>
-    <div class="video-grid">
-      <div class="video-item">
-        <video autoplay muted loop playsinline controls preload="auto" class="video-player">
-          <source src="assets/videos/nbe-video-1.mp4" type="video/mp4">
-        </video>
-        <p class="video-caption" data-i18n="video.v1"><strong>Video 1 · Optical clearing of human bone</strong><br>The clearing pipeline rendering intact human bone biopsy transparent for deep 3D imaging.</p>
+    <aside id="funding" class="funding-col reveal">
+      <p class="eyebrow" data-i18n="funding.label">Research Support</p>
+      <h3 class="funding-h" data-i18n="funding.h2">Funding</h3>
+      <div class="funding-card">
+        <p class="funding-year">2026</p>
+        <p class="funding-title" data-i18n="funding.lundgrens.title">Lundgrens Foundation</p>
+        <p class="funding-role" data-i18n="funding.role.pi">Principal Investigator</p>
+        <p class="funding-desc" data-i18n="funding.lundgrens.desc">Awarded research grant supporting work on skeletal biology and 3D imaging of bone.</p>
       </div>
-      <div class="video-item">
-        <video autoplay muted loop playsinline controls preload="auto" class="video-player">
-          <source src="assets/videos/nbe-video-2.mp4" type="video/mp4">
-        </video>
-        <p class="video-caption" data-i18n="video.v2"><strong>Video 2 · SOST⁺ cells and bone matrix</strong><br>3D distribution of SOST-expressing cells against autofluorescent bone matrix architecture.</p>
+    </aside>
+  </div>
+</section>
+
+<!-- ===== TRAINING & AFFILIATIONS ===== -->
+<section id="training" class="training">
+  <div class="container reveal">
+    <p class="eyebrow" data-i18n="train.label">Training &amp; Affiliations</p>
+    <div class="train-grid">
+      <div class="train">
+        <span class="train-role"><span data-i18n="train.now">Current</span> · 2023–</span>
+        <span class="train-inst">University of Gothenburg</span>
+        <span class="train-unit">Institute of Medicine · Sweden</span>
       </div>
-      <div class="video-item">
-        <video autoplay muted loop playsinline controls preload="auto" class="video-player">
-          <source src="assets/videos/nbe-video-3.mp4" type="video/mp4">
-        </video>
-        <p class="video-caption" data-i18n="video.v3"><strong>Video 3 · Dividing CAR cells in 3D</strong><br>Spatial characterisation of dividing CAR cells with segmented vasculature and bone surfaces.</p>
+      <div class="train">
+        <span class="train-role"><span data-i18n="train.postdoc">Postdoctoral training</span> · 2021–2023</span>
+        <span class="train-inst">Karolinska Institutet</span>
+        <span class="train-unit">Stockholm · Sweden</span>
       </div>
-      <div class="video-item">
-        <video autoplay muted loop playsinline controls preload="auto" class="video-player">
-          <source src="assets/videos/nbe-video-4.mp4" type="video/mp4">
-        </video>
-        <p class="video-caption" data-i18n="video.v4"><strong>Video 4 · BM-MSCs in young human bone</strong><br>Spatial arrangement of BM-MSCs, capillaries and adipocytes in young human bone.</p>
+      <div class="train">
+        <span class="train-role"><span data-i18n="train.phd">PhD</span> · 2014–2018</span>
+        <span class="train-inst">The University of Hong Kong</span>
+        <span class="train-unit">Hong Kong</span>
       </div>
     </div>
   </div>
@@ -486,50 +486,114 @@
 <!-- ===== CONTACT ===== -->
 <section id="contact">
   <div class="container">
-    <div class="section-header">
-      <div class="section-label" data-i18n="contact.label">Get In Touch</div>
-      <h2 data-i18n="contact.h2">Contact</h2>
-    </div>
-    <div class="contact-grid">
-      <div>
-        <div class="contact-item">
-          <strong data-i18n="contact.email.l">Email</strong>
-          <a href="mailto:tsz.long.chu@gu.se">tsz.long.chu@gu.se</a>
-        </div>
-        <div class="contact-item">
-          <strong data-i18n="contact.loc.l">Location</strong>
-          <p data-i18n="contact.loc.v">Gothenburg, Sweden</p>
-        </div>
-        <div class="contact-item">
-          <strong data-i18n="contact.scholar.l">Google Scholar</strong>
-          <a href="https://scholar.google.com/citations?user=eZervHIAAAAJ" target="_blank">scholar.google.com → Nelson Tsz Long Chu</a>
-        </div>
-      </div>
-      <div class="contact-note">
-        <h3 data-i18n="contact.note.h3">Prospective Students & Postdocs</h3>
-        <p data-i18n="contact.note.p">
-          We are looking for motivated researchers interested in spatial genomics, computational biology, or advanced imaging applied to skeletal biology.
-          Please send a brief introduction, your CV, and what specifically interests you in our work.
-          Strong candidates will be considered for PhD, postdoc, and visiting researcher positions.
-        </p>
+    <div class="cta-box reveal">
+      <p class="eyebrow" data-i18n="contact.label">Get In Touch</p>
+      <h2 data-i18n="cta.h2">Interested in <em>working together</em>?</h2>
+      <p data-i18n="cta.p">We welcome collaborations with clinicians, engineers and imaging scientists, and enquiries from prospective PhD students and postdocs.</p>
+      <div class="btn-row">
+        <a href="mailto:tsz.long.chu@gu.se" class="btn btn-light">tsz.long.chu@gu.se</a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ===== FOOTER ===== -->
-<footer>
+<footer class="site-footer">
   <div class="container">
-    <p><span data-i18n="footer.copy">© 2026 Chu Lab</span> · <a href="https://scholar.google.com/citations?user=eZervHIAAAAJ" target="_blank">Google Scholar</a></p>
+    <p class="footer-name">Chu Lab</p>
+    <p class="footer-tag">Skeletal Growth &amp; 3D Molecular Imaging</p>
+    <div class="footer-cols">
+      <div>
+        <p>Institute of Medicine</p>
+        <p>University of Gothenburg</p>
+        <p data-i18n="contact.loc.v">Gothenburg, Sweden</p>
+        <p><a href="mailto:tsz.long.chu@gu.se">tsz.long.chu@gu.se</a></p>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="#research" data-i18n="nav.research">Research</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#publications" data-i18n="nav.publications">Publications</a></li>
+        <li><a href="#technologies" data-i18n="nav.technologies">Technologies</a></li>
+        <li><a href="#team" data-i18n="nav.team">Team</a></li>
+        <li><a href="#news" data-i18n="nav.news">News</a></li>
+      </ul>
+      <div class="footer-meta">
+        <p><a href="https://scholar.google.com/citations?user=eZervHIAAAAJ" target="_blank" rel="noopener">Google Scholar</a> · <a href="https://orcid.org/0000-0001-8553-6880" target="_blank" rel="noopener">ORCID</a> · <a href="https://www.linkedin.com/in/nelson-tsz-long-chu-223854193" target="_blank" rel="noopener">LinkedIn</a></p>
+        <p data-i18n="footer.copy">© 2026 Chu Lab</p>
+        <p class="footer-ai" data-i18n="footer.ai">Built with help from AI assistants 🐖</p>
+      </div>
+    </div>
   </div>
 </footer>
 
 <script src="assets/js/i18n.js"></script>
 <script>
+  // Navbar: compact on scroll + highlight the section in view
   const nav = document.getElementById('navbar');
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 60);
+  const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 40);
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Supplementary videos open with a ~6 s journal title card: start after it and loop from there
+  document.querySelectorAll('video[data-start]').forEach(v => {
+    const S = parseFloat(v.dataset.start);
+    const skip = () => { if (v.currentTime < S - 0.5) v.currentTime = S; };
+    if (v.readyState >= 1) skip(); else v.addEventListener('loadedmetadata', skip, { once: true });
+    v.addEventListener('playing', skip, { once: true });
+    v.addEventListener('ended', () => { v.currentTime = S; v.play().catch(() => {}); });
   });
+
+  // Image carousel
+  (function () {
+    const root = document.getElementById('plateCarousel');
+    if (!root) return;
+    const slides = [...root.querySelectorAll('.carousel-slide')];
+    const cap = root.querySelector('.carousel-cap');
+    const cnt = root.querySelector('.carousel-count');
+    const pad = n => String(n).padStart(2, '0');
+    const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let i = 0, timer = null;
+    function show(n) {
+      slides[i].classList.remove('is-active');
+      i = (n + slides.length) % slides.length;
+      slides[i].classList.add('is-active');
+      cap.innerHTML = slides[i].dataset.cap;
+      cnt.textContent = pad(i + 1) + ' / ' + pad(slides.length);
+    }
+    const stop = () => { clearInterval(timer); timer = null; };
+    const start = () => { stop(); if (!still) timer = setInterval(() => show(i + 1), 5500); };
+    root.querySelector('.prev').addEventListener('click', () => { show(i - 1); start(); });
+    root.querySelector('.next').addEventListener('click', () => { show(i + 1); start(); });
+    root.addEventListener('mouseenter', stop);
+    root.addEventListener('mouseleave', start);
+    show(0); start();
+  })();
+
+  if ('IntersectionObserver' in window) {
+    // Play gallery videos only while they are on screen (saves bandwidth on a 150 MB page)
+    const vio = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.play().catch(() => {}); else e.target.pause(); });
+    }, { threshold: 0.35 });
+    document.querySelectorAll('.lazy-video').forEach(v => vio.observe(v));
+
+    // Fade sections in as they enter the viewport
+    const rio = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); rio.unobserve(e.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => rio.observe(el));
+
+    // Underline the nav link of the section in view
+    const links = new Map([...document.querySelectorAll('.nav-links a')].map(a => [a.getAttribute('href').slice(1), a]));
+    const sio = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        links.forEach(a => a.classList.remove('active'));
+        const a = links.get(e.target.id); if (a) a.classList.add('active');
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    document.querySelectorAll('section[id], header[id]').forEach(s => sio.observe(s));
+  } else {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+  }
 </script>
 
 </body>
